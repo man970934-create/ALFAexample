@@ -1,0 +1,133 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202126;
+  background: #f5f6f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --red: #ef3124;
+  --red-dark: #cc2018;
+  --ink: #202126;
+  --muted: #747780;
+  --border: #e8e9ed;
+  --surface: #fff;
+  --radius: 14px;
+  --shadow: 0 3px 12px #20212604;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: background 0.15s;
+}
+button:hover {
+  background: #f4f5f7;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--red-dark);
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #a635f0;
+  outline-offset: 3px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: -0.35px;
+}
+h3 {
+  font-size: 16px;
+  line-height: 1.45;
+}
+p {
+  line-height: 1.6;
+}
+svg {
+  flex-shrink: 0;
+}
+select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 30px 10px 12px;
+  background: white;
+  max-width: 100%;
+}
+input,
+textarea {
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 8px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #898c94;
+}
+summary {
+  cursor: pointer;
+}
+::selection {
+  background: #ffddd9;
+}
+blockquote {
+  margin: 16px 0;
+  padding: 18px;
+  background: #f5f6f8;
+  border-left: 3px solid var(--red);
+  line-height: 1.7;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
